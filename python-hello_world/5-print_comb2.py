@@ -1,5 +1,5 @@
 for el in range(100):
     if el == 99:
-        print(f"{el}")
+        print("{}".format(el))
     else:
-        print(f"{el:02}", end=", ")
+        print("{:02}".format(el), end=", ")
