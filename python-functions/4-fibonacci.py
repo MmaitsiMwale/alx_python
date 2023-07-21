@@ -1,8 +1,5 @@
 def fibonacci_sequence(n):
-    if n == 0:
-        return 0
-    elif n <= 2:
-        return 1
-    else:
-        return fibonacci_sequence(n - 1) + fibonacci_sequence(n - 2)
-
+    fib = [0, 1]
+    for el in range(2, n):
+        fib.append(fib[el - 1] + fib[el - 2])
+    return fib
