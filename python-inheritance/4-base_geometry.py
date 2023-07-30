@@ -1,5 +1,6 @@
 """
-Geometry Class BaseGeometry
+Geometry Class based on 3-base_geometry with non defined
+method area()
 """
 
 
