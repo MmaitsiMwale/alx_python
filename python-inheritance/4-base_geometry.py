@@ -4,7 +4,7 @@ method area().
 """
 
 
-class BaseGeometry(BaseGeometry):
+class BaseGeometry:
     """
     Geometry Class with undefined area() method
     """
