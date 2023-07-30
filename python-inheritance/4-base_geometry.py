@@ -9,9 +9,6 @@ class BaseGeometry:
     Geometry Class with undefined area() method
     """
 
-    def __init__(self):
-        super().__init__()
-
     def area(self):
         """raise exception that area is not defined"""
         raise Exception("area() is not implemented")
