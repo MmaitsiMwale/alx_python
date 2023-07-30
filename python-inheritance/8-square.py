@@ -12,7 +12,7 @@ class Square(Rectangle):
     def __init__(self, size):
         """Square constructor recieves 1 size integers"""
         super().__init__(size, size)
-        self.integer_validator("width", size)
+        self.integer_validator("size", size)
         self.__size = size
 
     def area(self):
