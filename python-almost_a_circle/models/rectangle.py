@@ -28,50 +28,34 @@ class Rectangle(Base):
     @width.setter
     def width(self, val):
         """sets the value of width"""
-        if not isinstance(val, int):
-            raise TypeError("Width must be an integer")
-        elif val < 0 or type is None:
-            raise ValueError("Width must be >= 0")
         self.__width = val
 
     @property
     def height(self):
-        """returns the value of width"""
+        """returns the value of height"""
         return self.__height
 
     @height.setter
-    def width(self, val):
-        """sets the value of width"""
-        if not isinstance(val, int):
-            raise TypeError("Width must be an integer")
-        elif val < 0 or type is None:
-            raise ValueError("Width must be >= 0")
+    def height(self, val):
+        """sets the value of height"""
         self.__height = val
 
     @property
     def x(self):
-        """returns the value of width"""
+        """returns the value of x"""
         return self.__x
 
     @x.setter
-    def width(self, val):
-        """sets the value of width"""
-        if not isinstance(val, int):
-            raise TypeError("Width must be an integer")
-        elif val < 0 or type is None:
-            raise ValueError("Width must be >= 0")
+    def x(self, val):
+        """sets the value of x"""
         self.__x = val
 
     @property
     def y(self):
-        """returns the value of width"""
+        """returns the value of y"""
         return self.__y
 
     @y.setter
-    def width(self, val):
-        """sets the value of width"""
-        if not isinstance(val, int):
-            raise TypeError("Width must be an integer")
-        elif val < 0 or type is None:
-            raise ValueError("Width must be >= 0")
+    def y(self, val):
+        """sets the value of y"""
         self.__y = val

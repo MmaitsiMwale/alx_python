@@ -11,13 +11,3 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
-
-    # @id
-    # def id():
-    #     """get the id passed to the function"""
-    #     pass
-
-    # @property
-    # def id():
-    #     """set the id with condition"""
-    #     pass
