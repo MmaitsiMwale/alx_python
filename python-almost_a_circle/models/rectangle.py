@@ -5,6 +5,8 @@
     y: right edge coordinate (default 0)
 """
 
+from base import Base
+
 
 class Rectangle(Base):
     """Rectangle inherits from Base and builds on it
