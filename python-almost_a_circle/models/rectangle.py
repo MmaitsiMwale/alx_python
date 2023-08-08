@@ -5,11 +5,13 @@
     y: right edge coordinate (default 0)
 """
 
-# from base import Base
+Base = __import__('base.py').Base
 
 
 class Rectangle(Base):
-    """Rectangle inherits from Base and builds on it"""
+    """Rectangle inherits from Base and builds on it
+        takes width, height, x, y
+    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__()
