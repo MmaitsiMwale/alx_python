@@ -5,8 +5,6 @@
     y: right edge coordinate (default 0)
 """
 
-Base = __import__('base.py').Base
-
 
 class Rectangle(Base):
     """Rectangle inherits from Base and builds on it
