@@ -5,7 +5,7 @@
     y: right edge coordinate (default 0)
 """
 
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
