@@ -81,13 +81,13 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute id, width, height, x, y"""
-        if len(args) == 0:
+        num_args = len(args)
+        if num_args == 0:
             self.id = kwargs.get("id", self.id)
             self.width = kwargs.get("width", self.width)
             self.height = kwargs.get("height", self.height)
             self.x = kwargs.get("x", self.x)
             self.y = kwargs.get("y", self.y)
-        num_args = len(args)
         if num_args == 1:
             self.id = args[0]
         if num_args == 2:
