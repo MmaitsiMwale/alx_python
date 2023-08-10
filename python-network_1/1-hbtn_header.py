@@ -4,10 +4,6 @@
 import requests
 import sys
 
-if __name__ == "__main__":
-    try:
-        page = sys.argv[1]
-        req = requests.get(page)
-        print(req.headers["X-Request-Id"])
-    except Exception as e:
-        raise SystemExit('Invalid Usage.\nUsage : ./main.py <url>')
+page = sys.argv[1]
+req = requests.get(page)
+print(req.headers["X-Request-Id"])
