@@ -9,4 +9,4 @@ page = "https://alu-intranet.hbtn.io/status"
 req = requests.get(page)
 print(f"- type: {type(req.text)}")
 if req.status_code:
-    print(f"-content: OK")
+    print(f"- content: OK")
