@@ -7,5 +7,5 @@ import requests
 
 page = "https://alu-intranet.hbtn.io/status"
 req = requests.get(page)
-if req.status_code == 200:
+if req.ok:
     print(f"Body response:\n\t- type: {type(req.text)}\n\t- content: OK")
