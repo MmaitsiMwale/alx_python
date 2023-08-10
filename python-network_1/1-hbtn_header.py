@@ -1,6 +1,6 @@
-"""module to display the value of X-Request-Id in the response header"""
+"""module to display the value of X-Request-Id in the 
+response header"""
 
-#!/usr/bin/python3
 
 import requests
 import sys
