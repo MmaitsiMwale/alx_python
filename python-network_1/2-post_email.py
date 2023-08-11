@@ -1,7 +1,5 @@
-"""module that takes in a URL and an email address, sends a POST request
-    to the parsed URL with the email as the parameter and finally displays
-    the body of the response
-"""
+"""module that takes in a URL and an email address, sends a POST 
+request to the parsed URL with the email as the parameter"""
 
 import requests
 import sys
@@ -13,5 +11,5 @@ try:
     r = requests.post(url, data=email)
     if r.status_code:
         print(f"Your email is: {email}")
-except Exception as error:
+except requests.exceptions.HTTPError as error:
     print("Something is not working")
