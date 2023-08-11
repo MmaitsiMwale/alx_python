@@ -10,6 +10,6 @@ try:
     email = sys.argv[2]
     r = requests.post(url, data=email)
     if r.status_code:
-        print(f"Your email is: {email}")
+        print(f"Email: {email}")
 except requests.exceptions.HTTPError as error:
     print("Something is not working")
