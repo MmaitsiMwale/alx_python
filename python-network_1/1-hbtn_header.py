@@ -7,4 +7,7 @@ import sys
 """collect the first argument and use it as a url"""
 page = sys.argv[1]
 req = requests.get(page)
-print(req.headers["X-Request-Id"])
+try:
+    print(req.headers["X-Request-Id"])
+except Exception as _:
+    print(None)
