@@ -11,6 +11,7 @@ try:
     url = sys.argv[1]
     email = sys.argv[2]
     r = requests.post(url, data=email)
-    print(f"Your email is: {r.status_code}")
+    if r.status_code:
+        print(f"Your email is: {email}")
 except Exception as error:
     print("Something is not working")
