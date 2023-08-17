@@ -14,7 +14,7 @@ def get_url(url):
         r = requests.get(url)
         if (r.status_code >= 400):
             raise Exception('Error Code: ' + str(r.status_code))
-        return r.content
+        return r.text
     except Exception as e:
         # print("Exception Occured")
         errorMsg = str(e).split(':')[-1].strip()
@@ -23,7 +23,5 @@ def get_url(url):
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    content = get_url(url)
-    # for line in iter(content):
-    #     print(line)
-    print(content)
+    text = get_url(url)
+    print(text)
