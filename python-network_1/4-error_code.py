@@ -22,6 +22,9 @@ def get_url(url):
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    text = get_url(url)
-    print(text)
+    try:
+        url = sys.argv[1]
+        text = get_url(url)
+        print(text)
+    except Exception:
+        print("Error--> Correct Usage: <./program.py> <url>")
