@@ -24,7 +24,7 @@ def list_all_states(username, password, database_name, argument):
     cursor = conn.cursor()
 
     # Create a query to get all states from the table states:
-    select_query = "SELECT * FROM `states` WHERE name LIKE '{}'".format(
+    select_query = "SELECT * FROM `states` WHERE name LIKE BINARY '{}'".format(
         argument)
     cursor.execute(select_query)
     query_rows = cursor.fetchall()
