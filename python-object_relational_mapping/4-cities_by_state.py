@@ -24,7 +24,8 @@ def list_all_cities(username, password, database_name):
 
     # Create a query to get all cities from the table cities:
     select_query = """SELECT cities.id,cities.name,states.name
-    FROM `cities` JOIN `states` on cities.state_id = states.id ORDER BY cities.id"""
+    FROM `cities` JOIN `states` on cities.state_id = states.id
+    ORDER BY cities.id"""
     cursor.execute(select_query)
     query_rows = cursor.fetchall()
     for row in query_rows:
