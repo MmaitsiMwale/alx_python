@@ -30,7 +30,7 @@ def list_all_states(username, password, database_name, state_name):
     cursor.execute(select_query, (state_name,))
     query_rows = cursor.fetchall()
     cities = ", ".join(city[0] for city in query_rows)
-    print(cities, end="")
+    print(cities)
     cursor.close()
     conn.close()
 
