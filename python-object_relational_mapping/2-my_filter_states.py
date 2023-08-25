@@ -35,8 +35,6 @@ def list_all_states(username, password, database_name, argument):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 5:
-        exit()
     try:
         assert len(sys.argv) == 5
         username = sys.argv[1]
