@@ -8,12 +8,13 @@ from sqlalchemy.orm import declarative_base
 from config import DATABASE_CONFIG
 
 
-Base = declarative_base()
-
 """represents an instant of the table states
     id: primary key for states table
     name : name of state
 """
+
+
+Base = declarative_base()
 
 
 class State(Base):
