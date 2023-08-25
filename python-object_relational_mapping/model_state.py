@@ -10,9 +10,14 @@ from config import DATABASE_CONFIG
 
 Base = declarative_base()
 
+"""represents an instant of the table states
+    id: primary key for states table
+    name : name of state
+"""
+
 
 class State(Base):
-    """represents an instant of the table states
+    """State represents an instant of the table states
         id: primary key for states table
         name : name of state
     """
