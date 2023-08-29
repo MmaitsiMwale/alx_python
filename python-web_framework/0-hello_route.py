@@ -10,4 +10,4 @@ app = Flask(__name__)
 # decorator to register a route with the app, '/' is the root path of our web application and will be used
 @app.route("/")
 def hello_world():
-    return f"Hello HBNB!"
+    return f"<p>Hello HBNB!</p>"
