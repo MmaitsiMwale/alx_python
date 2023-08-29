@@ -3,7 +3,7 @@ listens on 0.0.0.0, port 5000
 Routes:
     /: display Hello HBNB!"""
 
-from flask import Flask
+from flask import Flask, abort
 
 app = Flask(__name__)
 
@@ -35,10 +35,9 @@ def get_python_text(text):
 
 @app.route("/number/<n>")
 def get_number(n):
-    if n.isdigit():
-        return f"{n} is a number"
-    # else:
-    #     return f"{n} is not a valid digit"
+    if not n.isdigit():
+        abort(404)
+    return f"{n} is a number"
 
 
 if __name__ == "__main__":
