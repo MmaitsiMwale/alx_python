@@ -15,9 +15,8 @@ def list_first_state(username, password, database):
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).filter(State.id).first()
-    for state in states:
-        print(f"{state.id}: {state.name}")
+    state = session.query(State).filter(State.id).first()
+    print(f"{state.id}: {state.name}")
     session.close()
 
 
