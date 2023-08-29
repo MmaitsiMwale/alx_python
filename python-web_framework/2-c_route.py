@@ -21,9 +21,8 @@ def hbnb():
 
 @app.route("/c/<text>")
 def get_text(text):
-    if text == "_":
-        text = " "
-    return f"C {text}"
+    new_text = text.replace("_", " ")
+    return f"C {new_text}"
 
 
 if __name__ == "__main__":
