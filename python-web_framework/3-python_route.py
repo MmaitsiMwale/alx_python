@@ -1,7 +1,9 @@
 """Simple script that starts a flask web application
 listens on 0.0.0.0, port 5000
 Routes:
-    /: display Hello HBNB!"""
+    /: display Hello HBNB!
+    /hbnb: display HBNB
+    /c/<text>: handles variables"""
 
 from flask import Flask
 
